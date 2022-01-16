@@ -55,7 +55,7 @@
                         //Content
                         $mail->isHTML(true);                                  //Set email format to HTML
                         $mail->Subject = 'do-not-reply';
-                        $mail->Body    = '<p>This is an automatically generated e-mail.</p><p>Thank you for creating an account with us. Please click on this link to verify your email. <b><a href="http://localhost/login/?verification='.$code.'">http://localhost/login/?verification='.$code.'</a></b></p><br><p>-------------------------</p><p>Sincerely,</p><p>Moxa Panchal</p>';
+                        $mail->Body    = '<p>This is an automatically generated e-mail.</p><p>Thank you for creating an account with us. Please click on this link to verify your email. <b><a href="https://register--user.herokuapp.com/?verification='.$code.'">https://register--user.herokuapp.com/login/?verification='.$code.'</a></b></p><br><p>-------------------------</p><p>Sincerely,</p><p>Moxa Panchal</p>';
 
                         $mail->send();
                         echo 'Message has been sent';

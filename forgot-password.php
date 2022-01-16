@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'do-not-reply';
-                $mail->Body    = '<p>This is an automatically generated e-mail.</p><p>We have received a password reset request from your account. If you have not issued a password reset request, you can safely ignore this mail, and your account will not be affected.</p><p>To reset your password, click the link below :</p><b><a href="http://localhost/login/change-password.php?reset='.$code.'">http://localhost/login/change-password.php?reset='.$code.'</a></b><br><p>-------------------------</p><p>Sincerely,</p><p>Moxa Panchal</p>';
+                $mail->Body    = '<p>This is an automatically generated e-mail.</p><p>We have received a password reset request from your account. If you have not issued a password reset request, you can safely ignore this mail, and your account will not be affected.</p><p>To reset your password, click the link below :</p><b><a href="https://register--user.herokuapp.com/change-password.php?reset='.$code.'">https://register--user.herokuapp.com/change-password.php?reset='.$code.'</a></b><br><p>-------------------------</p><p>Sincerely,</p><p>Moxa Panchal</p>';
 
                 $mail->send();
                 echo 'Message has been sent';
