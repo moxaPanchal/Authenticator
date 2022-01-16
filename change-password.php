@@ -45,11 +45,11 @@ if (isset($_GET['reset'])) {
 
             <div class="form__input-group">
                 <input type="password" name="password" class="form__input" autofocus placeholder="Password" required>
-                <div class="form__input-error-message"></div>
+             
             </div>
             <div class="form__input-group">
                 <input type="password" name="confirm-password" class="form__input" autofocus placeholder="Confirm Password" required>
-                <div class="form__input-error-message"></div>
+              
             </div>
             <button class="form__button" name="submit" type="submit">Change Password</button>
 

@@ -58,11 +58,11 @@
             <?php echo $msg; ?>
             <div class="form__input-group">
                 <input type="email" name="email" class="form__input" autofocus placeholder="Email" required>
-                <div class="form__input-error-message"></div>
+               
             </div>
             <div class="form__input-group">
                 <input type="password" name="password" class="form__input" autofocus placeholder="Password" required>
-                <div class="form__input-error-message"></div>
+        
             </div>
             <button class="form__button" name="submit" type="submit">Continue</button>
             <p class="form__text">

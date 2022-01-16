@@ -58,6 +58,7 @@
                         $mail->Body    = '<p>This is an automatically generated e-mail.</p><p>Thank you for creating an account with us. Please click on this link to verify your email. <b><a href="https://register--user.herokuapp.com/?verification='.$code.'">https://register--user.herokuapp.com/?verification='.$code.'</a></b></p><br><p>-------------------------</p><p>Sincerely,</p><p>Moxa Panchal</p>';
 
                         $mail->send();
+                        
                         echo 'Message has been sent';
                     } catch (Exception $e) {
                         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
@@ -92,19 +93,19 @@
             <?php echo $msg; ?>
             <div class="form__input-group">
                 <input type="text" class="form__input" name="name" autofocus placeholder="Username" value="<?php if (isset($_POST['submit'])) {echo $name;} ?>" required>
-                <div class="form__input-error-message"></div>
+               
             </div>
             <div class="form__input-group">
                 <input type="email" name="email" class="form__input" autofocus placeholder="Email Address" value="<?php if (isset($_POST['submit'])) {echo $email;} ?>" required>
-                <div class="form__input-error-message"></div>
+              
             </div>
             <div class="form__input-group">
                 <input type="password" name="password" class="form__input" autofocus placeholder="Password" required>
-                <div class="form__input-error-message"></div>
+              
             </div>
             <div class="form__input-group">
                 <input type="password" name="confirm-password" class="form__input" autofocus placeholder="Confirm password" required>
-                <div class="form__input-error-message"></div>
+              
             </div>
             <button class="form__button" name="submit" type="submit">Continue</button>
             <p class="form__text">
