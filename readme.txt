@@ -7,3 +7,8 @@ register.php - At first, if user inputs the email which is already registered, i
 welcome.php - If the user is able to log in, he/she will be redirected to welcome page. This page will display a message that will display automatically display the users name. If user has entered "user345" as username, this page will say Welcome user345. 
 
 logout.php - When the user will click on logout button, the user will be logged out of his/her account
+
+forgot-password.php - When the user clicks on forgot password, he/she will be prompted to enter an email to reset the password. Once they will click on the link, they will be redirected to change-password.php. 
+
+change-password.php - This page will ask user to enter new password. When the user will insert the new password, the password will be updated.
+
