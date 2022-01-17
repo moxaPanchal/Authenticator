@@ -1,5 +1,9 @@
-config.php - configure database
-login.php - allows user to login
-register.php - allows user to login
-welcome.php - if user was able to login redirect him to welcome page
-logout.php - allows user to logout
+config.php - configure database. It connects the .php files to database, which allows the application to authenticate the user.
+
+index.php - This file allows user to login. If the user has not verified their email, this page will not allow the user to login. Moreover, if the user types in the incorrect     email or password, this page will throw an error and not let the user login.
+
+register.php - At first, if user inputs the email which is already registered, it will say that the email is already registered. Next, if the user enters different passwords in password and confirm password fields, it will say that passwords do not match. 
+
+welcome.php - If the user is able to log in, he/she will be redirected to welcome page. This page will display a message that will display automatically display the users name. If user has entered "user345" as username, this page will say Welcome user345. 
+
+logout.php - When the user will click on logout button, the user will be logged out of his/her account
